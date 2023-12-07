@@ -382,9 +382,11 @@ html{
 .contact-form .form-submit{
     background-color: #000;
     color:#fff;
-    padding: 10px 16px;
+    padding: 12px 16px;
     float:right;
     border: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .contact-form .form-submit:hover{
