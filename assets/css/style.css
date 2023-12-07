@@ -35,10 +35,15 @@ html{
     left:0;
     right:0;
     z-index:1;
+    /* overflow: hidden; */
 }
 
 .clear{
     clear:both;
+}
+
+.text-center{
+   text-align: center; 
 }
 
 .open{
@@ -144,6 +149,7 @@ html{
     font-size: 14px;
 }
 
+#header .mobile-menu-btn,
 #header .search-btn{
     float:right;
 }
@@ -153,6 +159,22 @@ html{
     cursor: pointer;
 }
 
+#header .mobile-menu-btn{
+    display: none;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #333;
+}
+
+#header .menu-icon,
 #header .search-icon{
     color: #fff;
     font-size:20px;
@@ -192,9 +214,12 @@ html{
 
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left:auto;
     margin-right:auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{
@@ -222,20 +247,16 @@ html{
     margin-top:48px;
 }
 
-#content .member-item{
-    float: left;
-    width: 33.33333%;
-    text-align: center;
-}
 
 #content .member-name{
+    margin-top: 16px;
     font-size: 15px;
 }
 
 #content .member-img{
     width: 154px;
     border-radius: 4px;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
 /* Tour Section*/
